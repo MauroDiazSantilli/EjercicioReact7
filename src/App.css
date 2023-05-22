@@ -1,0 +1,36 @@
+.empleado-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.empleado-item {
+  flex: 0 0 33.33%;
+  padding: 10px;
+}
+
+.empleado-avatar {
+  background-color: #ff0000;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empleado-row {
+  background-color: #00ff00;
+  padding: 10px;
+  text-align: center;
+}
+
+.empleado-row h4 {
+  margin-top: 0;
+}
+
+.empleado-row p {
+  margin-bottom: 5px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
