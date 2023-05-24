@@ -1,6 +1,6 @@
 import React from 'react';
+import { Container, Row } from 'react-bootstrap';
 import EmpleadoAvatar from './EmpleadoAvatar';
-import EmpleadoRow from './EmpleadoRow';
 
 const EmpleadoList = () => {
   const empleados = [
@@ -16,23 +16,23 @@ const EmpleadoList = () => {
   ];
 
   return (
-    <div className="container">
+    <Container>
       <h1 className="text-center mt-4">Lista de Empleados</h1>
       <div className="empleado-list">
         {empleados.map((empleado) => (
           <div key={empleado.id} className="empleado-item">
             <div className="empleado-avatar">
-              <img src={empleado.pic} alt="AvatardeEmpleado" className="img-fluid" />
+              <EmpleadoAvatar pic={empleado.pic} />
             </div>
             <div className="empleado-info">
               <h4>{empleado.fullName}</h4>
               <p>{empleado.title}</p>
-              <p className='text-success fw-bold'>{empleado.department}</p>
+              <p className="text-success fw-bold">{empleado.department}</p>
             </div>
           </div>
         ))}
       </div>
-    </div>
+    </Container>
   );
 };
 

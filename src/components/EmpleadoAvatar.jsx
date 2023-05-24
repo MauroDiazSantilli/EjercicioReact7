@@ -1,9 +1,10 @@
 import React from 'react';
+import { Image } from 'react-bootstrap';
 
 const EmpleadoAvatar = ({ pic }) => {
   return (
     <div className="empleado-avatar">
-      <img src={pic} alt="AvatardeEmpleado" className="img-fluid" />
+      <Image src={pic} alt="AvatardeEmpleado" fluid />
     </div>
   );
 };
