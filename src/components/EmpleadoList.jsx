@@ -17,7 +17,7 @@ const EmpleadoList = () => {
 
   return (
     <Container>
-      <h1 className="text-center mt-4">Lista de Empleados</h1>
+      <h1 className="text-center my-5">Lista de Empleados</h1>
       <div className="empleado-list">
         {empleados.map((empleado) => (
           <div key={empleado.id} className="empleado-item">
